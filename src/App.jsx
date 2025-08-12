@@ -1,8 +1,27 @@
 import React from "react";
 import ExcalidrawEditor from "./ExcalidrawEditor";
 
+
+
+
+
+
 function App() {
-  return <ExcalidrawEditor />;
+  return ( 
+    <>
+    {/* <Frontend/> */}
+    <div>App</div>
+    
+ 
+    
+    
+    {/* <ExcalidrawEditor /> */}
+    </>
+  
+  
+
+  )
+
 }
 
 export default App;

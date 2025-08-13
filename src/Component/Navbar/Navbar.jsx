@@ -47,6 +47,7 @@ export default function Navbar() {
       <li> <NavLink  to='/chatbot' className="hover:text-black hover:underline cursor-pointer">Chatbot-interface</NavLink> </li>
       <li> <NavLink  to='/feature' className="hover:text-black hover:underline cursor-pointer">Feature</NavLink> </li>
       <li> <NavLink  to='/finance' className="hover:text-black hover:underline cursor-pointer">Finance</NavLink></li>
+      <li><NavLink to='/feedback'className="hover:text-black hover:underline cursor-pointer">Feedback</NavLink></li>
       <li> <NavLink to='/setting'  className="hover:text-black hover:underline cursor-pointer">Setting</NavLink> </li>
         
       

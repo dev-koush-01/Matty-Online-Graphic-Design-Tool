@@ -25,6 +25,7 @@ import F_chat from './Component/Floating_chatbot/F_chat.jsx'
 
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -76,8 +77,7 @@ const router = createBrowserRouter([
       path: "/feedback",
       element: <FeedbackForm />,
     },
-    {
-     }
+    
      
 
     ]

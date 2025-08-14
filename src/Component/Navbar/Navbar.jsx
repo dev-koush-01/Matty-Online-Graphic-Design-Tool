@@ -5,7 +5,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md px-8 py-4 flex justify-between items-center relative">
+    <nav className="bg-white shadow-md w-full px-8 py-4 flex justify-between items-center relative">
       {/* Logo */}
       <div className="flex items-center space-x-2">
         <span className="text-xl font-bold text-gray-800">DesignHub</span>
@@ -36,26 +36,34 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <ul className=" bg-gray-300 absolute top-16 right-0 w-50 h-screen  shadow-md p-6 space-y-4  text-gray-700 font-medium">
+        <ul className=" bg-gray-300 absolute top-15 right-0 w-65 h-[calc(100vh-25px)]  shadow-md p-6 space-y-4  text-gray-700 font-medium">
        <li> <NavLink to= '/home' className="hover:text-black hover:underline cursor-pointer">Home</NavLink> </li>
         <li> <NavLink to='/about' className=" hover:text-black hover:underline cursor-pointer">About</NavLink> </li>
         <li> <NavLink to='/contact' className="hover:text-black hover:underline cursor-pointer">Contact</NavLink> </li>
-        <li> <NavLink  to='/Login' className="hover:text-black hover:underline cursor-pointer">Login</NavLink> </li>
+        <li> <NavLink  to='/Login' className="hover:text-black hover:underline md:hidden cursor-pointer">Login</NavLink> </li>
         <li> <NavLink to='/profile'  className="hover:text-black hover:underline cursor-pointer">Profile</NavLink></li>
        <li>   <NavLink to='administration' className="hover:text-black hover:underline cursor-pointer">Administration-interface</NavLink> </li>
       <li> <NavLink  to='/canvas' className="hover:text-black hover:underline cursor-pointer">Canvas</NavLink> </li>
       <li> <NavLink  to='/chatbot' className="hover:text-black hover:underline cursor-pointer">Chatbot-interface</NavLink> </li>
       <li> <NavLink  to='/feature' className="hover:text-black hover:underline cursor-pointer">Feature</NavLink> </li>
       <li> <NavLink  to='/finance' className="hover:text-black hover:underline cursor-pointer">Finance</NavLink></li>
+      <li><NavLink to='/feedback'className="hover:text-black hover:underline cursor-pointer">Feedback</NavLink></li>
       <li> <NavLink to='/setting'  className="hover:text-black hover:underline cursor-pointer">Setting</NavLink> </li>
         
       
         
         
-        
+        <div className="border absolute bottom-10 rounded-2xl flex items-center justify-center hover:bg-gray-400 w-55   "> <NavLink to="/home"> <button>Logout </button> </NavLink> </div>
         
         </ul>
+
+        
       )}
+      
+
+
+
+
     </nav>
   );
 }

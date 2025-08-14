@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './Layout.jsx'
-import Front_page from './Component/Before_login/front_page.jsx'
+import Front_page from './Component/Before_login/Front_page.jsx'
 import About from './Component/About/About.jsx'
 import Home from './Component/Home/Home.jsx'
 import Contact from './Component/Contact/Contact.jsx'
@@ -18,7 +18,7 @@ import Chatbot from './Component/Chatbot/Chatbot.jsx'
 import Canvas from './Component/Canvas/Canvas.jsx'
 import Signup from './Component/Signup/Signup.jsx'
 import Login from './Component/Login/Login.jsx'
-
+import FeedbackForm from './Component/feedback/feedback.jsx'
 import F_chat from './Component/Floating_chatbot/F_chat.jsx'
 
 
@@ -42,7 +42,7 @@ const router = createBrowserRouter([
         element: <About/>,
       },
       {path:"/home",
-        element: <Home/>,
+        element: <Front_page/>,
       },
       {path:"/contact",
         element: <Contact/>,
@@ -72,7 +72,12 @@ const router = createBrowserRouter([
        {path:"/login",
         element: <Login/>,
       },
-     
+     {
+      path: "/feedback",
+      element: <FeedbackForm />,
+    },
+    {
+     }
      
 
     ]

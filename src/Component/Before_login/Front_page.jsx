@@ -15,9 +15,7 @@ function front_page() {
           <img className='h-100 pl-50 ' src="../src/assets/front_page_image.png" alt="front_page_image" />
          
 
-          <div className='text-center flex justify-center items-center pb-5Hey, Cortana. '>
-        <NavLink to="/signup"> <button className='  w-36 h-12 rounded-md  text-white bg-black font-bold p-2 hover:text-2xl      '> Sign up Now </button>
-       </NavLink> </div>
+          
 
       <div className='bg-gray-100 '> <div className='text-center'><h2>Build Your AI business</h2></div>
         <div className='text-4xl font-bold text-center'><h1>Experience the future of creative design <br /> with generative AI</h1></div>

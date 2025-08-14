@@ -6,7 +6,7 @@ import linkedin from "../../assets/linkedin.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-400 text-white py-4 px-8 mt-auto">
+    <footer className="bg-gray-400 text-white w-full h-[calc(100)]   py-4 px-8 mt-auto ">
       <div className="flex flex-col md:flex-row justify-between items-center">
         
         {/* Left side */}

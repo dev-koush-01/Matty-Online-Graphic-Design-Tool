@@ -19,20 +19,20 @@ function Profile() {
   return (
     <div className="text-center ">
       {user ? (
-        <div className="bg-gray-200 shadow-md rounded-lg p-6 w-full h-full ">
+        <div className="bg-gray-200 shadow-md rounded-lg p-6 w-full    align-item-center  justify-center">
           <img 
             src={user.picture}
             alt="profile"
-            className="rounded-full w-40 h-40 object-cover mx-auto"
+            className="rounded-full w-40 h-40 mt-25  object-cover mx-auto"
           />
           <h2 className="text-xl font-semibold mt-4">{user.name}</h2>
           <p className="text-gray-600">{user.email}</p>
 
           
-          <div className="flex items-center justify-center space-x-4 mt-4">
+          <div className="flex items-center justify-center space-x-4 mt-4 mb-27">
   <div className="px-5 py-2 rounded-lg bg-gray-500 text-white hover:bg-black transition w-32 border">
     Edit Profile
-  </div>
+  </div >
 
   <NavLink to="/home">
     <button

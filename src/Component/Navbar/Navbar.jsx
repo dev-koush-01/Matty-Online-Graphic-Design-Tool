@@ -36,7 +36,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <ul className=" bg-gray-300 absolute top-15 right-0 w-65 h-[calc(100vh-25px)]  shadow-md p-6 space-y-4  text-gray-700 font-medium">
+        <ul className=" bg-gray-300 absolute top-15 right-0 w-65 h-[calc(100vh-25px)]  animate-pulse  shadow-md p-6 space-y-4  text-gray-700 font-medium">
        <li> <NavLink to= '/home' className="hover:text-black hover:underline cursor-pointer">Home</NavLink> </li>
         <li> <NavLink to='/about' className=" hover:text-black hover:underline cursor-pointer">About</NavLink> </li>
         <li> <NavLink to='/contact' className="hover:text-black hover:underline cursor-pointer">Contact</NavLink> </li>

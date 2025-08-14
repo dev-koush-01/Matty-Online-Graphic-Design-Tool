@@ -36,7 +36,7 @@ export default function Footer() {
 
         {/* Right side */}
         <div className="text-sm text-center md:text-right">
-          © 2023 ProjectHub. All Rights Reserved.
+          © 2023 DesignHub. All Rights Reserved.
         </div>
       </div>
     </footer>

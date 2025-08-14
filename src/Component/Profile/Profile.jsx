@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link , NavLink } from "react-router-dom";
 
 
 function Profile() {
-  const [user, setUser] = useState({
-    name: "shashank ",
-    email: "shashank123@example.com",
-    picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK0mYlUkYYodSiXrCmjrkmKOsyYCm8yw4mMg&s",
-  });
+  const [user, setUser] = useState();
+   useEffect(() => {
+    // Simulate fetching user data from an API
+    const fetchedUser = {
+      name: "Shashank",
+      email: "shashank123@example.com",
+      picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK0mYlUkYYodSiXrCmjrkmKOsyYCm8yw4mMg&s",
+    };
 
+    setUser(fetchedUser);
+  }, []);
  
 
   return (

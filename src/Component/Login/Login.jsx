@@ -24,6 +24,11 @@ export default function Login() {
     // TODO: Call backend API for login
   };
 
+  const handleGoogleLogin = () => {
+    // TODO: Integrate Google OAuth
+    console.log("Google login clicked");
+  };
+
   return (
     <div className="min-h-screen flex flex-col justify-between bg-white">
       <main className="flex justify-center items-center flex-1 px-4">
@@ -37,7 +42,7 @@ export default function Login() {
             Welcome Back
           </h2>
           <p className="text-sm text-gray-500 text-center mb-6">
-            Login to continue where you left off.
+            Log in to your account
           </p>
 
           {/* Email */}
@@ -51,7 +56,7 @@ export default function Login() {
               value={formData.email}
               onChange={handleChange}
               className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400 transition-all duration-300"
-              placeholder="Enter your registered email"
+              placeholder="Enter your email"
               required
             />
           </div>
@@ -80,12 +85,22 @@ export default function Login() {
             Login
           </button>
 
+          {/* Google Login */}
+          <button
+            type="button"
+            onClick={handleGoogleLogin}
+            className="w-full mt-3 border border-gray-300 py-2 rounded-lg flex items-center justify-center gap-2 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-md active:scale-95"
+          >
+            <img
+              src="https://www.svgrepo.com/show/355037/google.svg"
+              alt="Google"
+              className="w-5 h-5 transition-transform duration-300 group-hover:rotate-6"
+            />
+            <span className="font-medium text-gray-700">Continue with Google</span>
+          </button>
+
           {/* Links */}
           <div className="mt-4 text-sm text-center text-gray-500">
-            <a href="#" className="hover:underline">
-              Forgot Password?
-            </a>
-            <br />
             <Link to="/signup" className="hover:underline">
               Don’t have an account? Sign Up
             </Link>

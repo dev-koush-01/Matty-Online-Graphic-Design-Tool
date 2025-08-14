@@ -33,6 +33,11 @@ export default function Signup() {
     // TODO: Call backend API for signup
   };
 
+  const handleGoogleSignup = () => {
+    // TODO: Integrate Google OAuth
+    console.log("Google signup clicked");
+  };
+
   return (
     <div className="min-h-screen flex flex-col justify-between bg-white">
       <main className="flex justify-center items-center flex-1 px-4">
@@ -78,7 +83,7 @@ export default function Signup() {
                 <img
                   src={preview}
                   alt="Preview"
-                  className="w-24 h-24 rounded-full object-cover mb-2 border transform transition-all duration-500"
+                  className="w-24 h-24 rounded-full object-cover mb-2 border transform transition-all duration-500 hover:scale-105"
                 />
               ) : (
                 <svg
@@ -148,6 +153,20 @@ export default function Signup() {
             className="w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1 font-medium"
           >
             Sign Up
+          </button>
+
+          {/* Google Signup */}
+          <button
+            type="button"
+            onClick={handleGoogleSignup}
+            className="w-full mt-3 border border-gray-300 py-2 rounded-lg flex items-center justify-center gap-2 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-md active:scale-95"
+          >
+            <img
+              src="https://www.svgrepo.com/show/355037/google.svg"
+              alt="Google"
+              className="w-5 h-5 transition-transform duration-300 group-hover:rotate-6"
+            />
+            <span className="font-medium text-gray-700">Continue with Google</span>
           </button>
 
           {/* Links */}

@@ -6,7 +6,7 @@ import ai_image_head from '../../assets/images_aihead.jpeg'
 function front_page() {
   return (
     <>
-          <div  className='text-center flex justify-center items-center '><h1 className='text-center text-4xl font-bold'>Welcome to DesignHub </h1>
+          <div  className='text-center flex justify-center items-center '><h1 className='text-center text-4xl font-bold'>Welcome to Matty </h1>
              
           </div>
           <p  className='text-center flex justify-center items-center pt-4 ' >A browser-based design tool to easily create posters, banners, and social media images. <br /> 

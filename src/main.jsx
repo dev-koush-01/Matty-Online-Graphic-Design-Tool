@@ -20,9 +20,10 @@ import Signup from './Component/Signup/Signup.jsx'
 import Login from './Component/Login/Login.jsx'
 import FeedbackForm from './Component/Feedback/Feedback.jsx'
 import F_chat from './Component/Floating_chatbot/F_chat.jsx'
-
-
-
+import Dashboard from './Component/Dashboard/Dashboard.jsx'
+import HistorySection from './Component/HistorySection/HistorySection.jsx'
+import ExcalidrawEditor from './ExcalidrawEditor.jsx'
+import EditProfile from './Component/EditProfile/EditProfile.jsx'
 
 
 const router = createBrowserRouter([
@@ -75,6 +76,22 @@ const router = createBrowserRouter([
      {
       path: "/feedback",
       element: <FeedbackForm />,
+    },
+    {
+      path: "/dashboard",
+      element: <Dashboard />,
+    },
+    {
+      path: "/history",
+      element: <HistorySection />,
+    },
+    {
+      path: "/editor",
+      element: <ExcalidrawEditor />,
+    },
+    {
+      path: "/edit-profile",
+      element: <EditProfile />,
     },
     {
      }

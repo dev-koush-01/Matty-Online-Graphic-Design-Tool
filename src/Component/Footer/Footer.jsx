@@ -14,10 +14,10 @@ export default function Footer() {
           <p>
             Contact Us:{" "}
             <a
-              href="mailto:support@DesignHub.com"
+              href="mailto:support@matty.com"
               className="text-blue-400 hover:underline"
             >
-              support@projecthub.com
+              support@matty.com
             </a>
           </p>
           <p className="mt-1">Follow Us:</p>
@@ -36,7 +36,7 @@ export default function Footer() {
 
         {/* Right side */}
         <div className="text-sm text-center md:text-right">
-          © 2023 ProjectHub. All Rights Reserved.
+          © 2025 Matty. All Rights Reserved.
         </div>
       </div>
     </footer>

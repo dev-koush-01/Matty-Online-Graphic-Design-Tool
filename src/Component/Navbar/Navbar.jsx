@@ -5,10 +5,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md px-8 py-4 flex justify-between items-center relative">
+    <nav className="bg-white shadow-md px-8 py-4 flex justify-between items-center relative z-50">
       {/* Logo */}
       <div className="flex items-center space-x-2">
-        <span className="text-xl font-bold text-gray-800">DesignHub</span>
+        <span className="text-xl font-bold text-gray-800">Matty</span>
       </div>
 
       
@@ -26,7 +26,7 @@ export default function Navbar() {
 
     
       <div
-        className="flex flex-col space-y-1 cursor-pointer "
+        className="flex flex-col space-y-1 cursor-pointer z-50"
         onClick={() => setIsOpen(!isOpen)}
       >
         <span className="block w-6 h-0.5 bg-black"></span>
@@ -42,7 +42,7 @@ export default function Navbar() {
         <li> <NavLink to='/contact' className="hover:text-black hover:underline cursor-pointer">Contact</NavLink> </li>
         <li> <NavLink  to='/Login' className="hover:text-black hover:underline cursor-pointer">Login</NavLink> </li>
         <li> <NavLink to='/profile'  className="hover:text-black hover:underline cursor-pointer">Profile</NavLink></li>
-       <li>   <NavLink to='administration' className="hover:text-black hover:underline cursor-pointer">Administration-interface</NavLink> </li>
+       <li>   <NavLink to='/administration' className="hover:text-black hover:underline cursor-pointer">Administration-interface</NavLink> </li>
       <li> <NavLink  to='/canvas' className="hover:text-black hover:underline cursor-pointer">Canvas</NavLink> </li>
       <li> <NavLink  to='/chatbot' className="hover:text-black hover:underline cursor-pointer">Chatbot-interface</NavLink> </li>
       <li> <NavLink  to='/feature' className="hover:text-black hover:underline cursor-pointer">Feature</NavLink> </li>

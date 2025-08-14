@@ -18,10 +18,9 @@ function front_page() {
          
 
           <div className='text-center flex justify-center items-center pb-5Hey, Cortana. '>
-        <NavLink to="/signup"> <button className='  w-36 h-12 rounded-md  text-white bg-black font-bold p-2 hover:text-2xl    m-5 animate-bounce   '> Sign up Now </button>
-       </NavLink> </div>
+         </div>
 
-      <div className='bg-gray-100 '> <div className='text-center'><h2>Build Your AI business</h2></div>
+      <div className='bg-gray-100 space-y-5'> <div className='text-center font-black'><h2>Build Your AI business</h2></div>
         <div className='text-4xl font-bold text-center'><h1>Experience the future of creative design <br /> with generative AI</h1></div>
         <p className='text-center'>Use the image generator AI to convert your business ideas into reality. Our platform empowers you to create designs online for free, <br /> perfect  for elevating your marketing efforts.
 
@@ -41,14 +40,14 @@ function front_page() {
       </div>
 
       <div className=''>
-            <img className=' h-80 w-100  mt-20  ml-50' src={ai_image_head} alt="image" />
+            <img className=' h-80 w-100  mt-20  ml-50' src={Choose_designHub} alt="image" />
             </div>
       
       </div>
       </div>
 
         <div className='bg-gray-300 flex '>
-          <div> <img className=' h-80 w-90 mt-15 shadow-lg mr-80 ml-20   ' src={Choose_designHub} alt="image" /></div>
+          <div> <img className=' h-80 w-90 mt-15 shadow-lg mr-80 ml-20   ' src={ai_image_head} alt="image" /></div>
 
           <div className='  pb-30 pt-20 space-y-5 text-center md:text-right pr-30'>
         <h1 className='text-4xl font-bold mr-83' >Creativity</h1>

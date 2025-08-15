@@ -46,14 +46,27 @@ export default function Navbar() {
       <li> <NavLink  to='/canvas' className="hover:text-black hover:underline cursor-pointer">Canvas</NavLink> </li>
       <li> <NavLink  to='/chatbot' className="hover:text-black hover:underline cursor-pointer">Chatbot-interface</NavLink> </li>
       <li> <NavLink  to='/feature' className="hover:text-black hover:underline cursor-pointer">Feature</NavLink> </li>
+      <li> <NavLink to='/payment'  className="hover:text-black hover:underline cursor-pointer">Payment</NavLink> </li>
       <li> <NavLink  to='/finance' className="hover:text-black hover:underline cursor-pointer">Finance</NavLink></li>
       <li><NavLink to='/feedback'className="hover:text-black hover:underline cursor-pointer">Feedback</NavLink></li>
       <li> <NavLink to='/setting'  className="hover:text-black hover:underline cursor-pointer">Setting</NavLink> </li>
         
+      <NavLink to="/home">
+                  <button
+                    className="border absolute bottom-10 rounded-2xl flex items-center justify-center hover:bg-gray-400 w-55"
+                    onClick={() => {
+                      localStorage.removeItem("user");
+                      localStorage.removeItem("jwt");
+                      
+                    }}
+                  >
+                    Logout
+                  </button>
+                </NavLink>  
       
         
         
-        <div className="border absolute bottom-10 rounded-2xl flex items-center justify-center hover:bg-gray-400 w-55   "> <NavLink to="/home"> <button>Logout </button> </NavLink> </div>
+      
         
         </ul>
 

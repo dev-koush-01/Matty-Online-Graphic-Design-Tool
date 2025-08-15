@@ -37,7 +37,7 @@ export default function Login() {
 
       toast.success(data.message || "Login successful");
       setFormData({ email: "", password: "" });
-      navigate("/profile");
+      navigate("/administration");
     } catch (error) {
       toast.error(error.response?.data?.message || "Login failed");
     }
@@ -61,7 +61,7 @@ const handleGoogleSignup = async () => {
     localStorage.setItem("jwt", token);
     localStorage.setItem("user", JSON.stringify(user));
     toast.success("Google login successful!");
-    navigate("/profile");
+    navigate("/administration");
   });
 };
 

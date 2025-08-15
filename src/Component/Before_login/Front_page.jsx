@@ -14,7 +14,7 @@ function front_page() {
           <p  className='text-center flex justify-center items-center pt-4 '  >A browser-based design tool to easily create posters, banners, and social media images. <br /> 
             Features drag-and-drop editing, ready templates, cloud saving, and quick PNG/PDF <br />
             exports — no software install needed</p>
-          <img className='h-100  w-200 ml-51 py-0 shadow-2xl ' src="../src/assets/front_page_image.png" alt="front_page_image" />
+          <img className='h-100  w-200 ml-65 py-5 m-10 shadow-2xl ' src="../src/assets/front_page_image.png" alt="front_page_image" />
          
 
           <div className='text-center flex justify-center items-center pb-5Hey, Cortana. '>

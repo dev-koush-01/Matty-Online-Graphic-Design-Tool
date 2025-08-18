@@ -6,13 +6,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './Layout.jsx'
 import Front_page from './Component/Before_login/Front_page.jsx'
 import About from './Component/About/About.jsx'
-import Home from './Component/Home/Home.jsx'
 import Contact from './Component/Contact/Contact.jsx'
 import Profile from './Component/Profile/Profile.jsx'
 import Administration from './Component/Administration/Administration.jsx'
-import Finance from './Component/Finance/Finance.jsx'
-import Feature from './Component/Feature/Feature.jsx'
-import Setting from './Component/Setting/Setting.jsx'
+
 import Canvas from './Component/Canvas/Canvas.jsx'
 import Signup from './Component/Signup/Signup.jsx'
 import Login from './Component/Login/Login.jsx'
@@ -21,7 +18,6 @@ import F_chat from './Component/Floating_chatbot/F_chat.jsx'
 import Dashboard from './Component/Dashboard/Dashboard.jsx'
 import HistorySection from './Component/HistorySection/HistorySection.jsx'
 import ExcalidrawEditor from './ExcalidrawEditor.jsx'
-import PaymentSection from './Component/Payment/PaymentSection.jsx'
 import ChatWidget from './Component/Chatbot/ChatWidget.jsx'
 
 const router = createBrowserRouter([
@@ -53,15 +49,7 @@ const router = createBrowserRouter([
      {path:"/administration",
         element: <Administration/>,
       },
-     {path:"/finance",
-        element: <Finance/>,
-      },
-      {path:"/feature",
-        element: <Feature/>,
-      },
-      {path:"/setting",
-        element: <Setting/>,
-      },
+    
       {path:"/chatbot",
         element: <ChatWidget/>,
       },
@@ -88,13 +76,14 @@ const router = createBrowserRouter([
       element: <ExcalidrawEditor />,
     },
     
-    {
-      path: "/payment",
-      element: <PaymentSection />,
-    },
+   
     {
       path:"/editor",
       element: <ExcalidrawEditor />,
+    },
+    {
+      path:"/Floating_chatbot",
+      element: < F_chat/>,
     },
     {       
      }

@@ -37,7 +37,12 @@ export default function Login() {
 
       toast.success(data.message || "Login successful");
       setFormData({ email: "", password: "" });
-      navigate("/administration");
+        // Check for admin email
+    if (data.user.email === "admin@matty.com") {
+      navigate("/administration"); // admin page
+    } else {
+      navigate("/dashboard"); // regular user page
+    }
     } catch (error) {
       toast.error(error.response?.data?.message || "Login failed");
     }

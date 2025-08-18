@@ -8,13 +8,11 @@ import Front_page from './Component/Before_login/Front_page.jsx'
 import About from './Component/About/About.jsx'
 import Home from './Component/Home/Home.jsx'
 import Contact from './Component/Contact/Contact.jsx'
-
 import Profile from './Component/Profile/Profile.jsx'
 import Administration from './Component/Administration/Administration.jsx'
 import Finance from './Component/Finance/Finance.jsx'
 import Feature from './Component/Feature/Feature.jsx'
 import Setting from './Component/Setting/Setting.jsx'
-import Chatbot from './Component/Chatbot/Chatbot.jsx'
 import Canvas from './Component/Canvas/Canvas.jsx'
 import Signup from './Component/Signup/Signup.jsx'
 import Login from './Component/Login/Login.jsx'
@@ -24,7 +22,7 @@ import Dashboard from './Component/Dashboard/Dashboard.jsx'
 import HistorySection from './Component/HistorySection/HistorySection.jsx'
 import ExcalidrawEditor from './ExcalidrawEditor.jsx'
 import PaymentSection from './Component/Payment/PaymentSection.jsx'
-
+import ChatWidget from './Component/Chatbot/ChatWidget.jsx'
 
 const router = createBrowserRouter([
   {
@@ -65,7 +63,7 @@ const router = createBrowserRouter([
         element: <Setting/>,
       },
       {path:"/chatbot",
-        element: <Chatbot/>,
+        element: <ChatWidget/>,
       },
       {path:"/canvas",
         element: <Canvas/>,
@@ -86,7 +84,7 @@ const router = createBrowserRouter([
       element: <HistorySection />,
     },
     {
-      path: "/editor",
+      path: "/editor/:projectId",
       element: <ExcalidrawEditor />,
     },
     
@@ -95,6 +93,10 @@ const router = createBrowserRouter([
       element: <PaymentSection />,
     },
     {
+      path:"/editor",
+      element: <ExcalidrawEditor />,
+    },
+    {       
      }
      
 
@@ -107,7 +109,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <>
     {/* <App /> */}
-    <F_chat/>
+    <ChatWidget/>
 
     <RouterProvider  router={router} />
     </>

@@ -1,7 +1,6 @@
 import dotenv from "dotenv";
 dotenv.config(); // ✅ Load env before anything else
 
-
 import express from "express";
 import mongoose from "mongoose";
 import userRoute from "./routes/user.route.js";
@@ -15,7 +14,8 @@ import feedbackRoutes from "./routes/feedbackRoutes.js";
 
 import contactRoutes from "./routes/contactRoutes.js";
 import profileRoutes from "./routes/user.route.js";
-
+import projectRoutes from "./routes/ProjectRoutes.js";
+import chatRoutes from "./chatbot/chatBot.js"
 // ✅ Now passport runs AFTER env is loaded
 
 const app = express();
@@ -23,7 +23,9 @@ const port = process.env.PORT;
 const MONGO_URL = process.env.MONGO_URI;
 
 // Middleware
-app.use(express.json());
+app.use(express.json({ limit: "10mb" })); // adjust limit as needed
+app.use(express.urlencoded({ limit: "10mb", extended: true }));
+
 app.use(cookieParser());
 app.use(
   cors({
@@ -33,6 +35,7 @@ app.use(
   })
 );
 app.use("/api/feedback", feedbackRoutes);
+app.use("/api/chat", chatRoutes);
 
 app.use(
   fileUpload({
@@ -44,7 +47,7 @@ app.use(
 app.use("/api/contact", contactRoutes);
 
 app.use("/api/profile", profileRoutes);
-
+app.use("/api/projects", projectRoutes);
 try {
   await mongoose.connect(MONGO_URL);
   console.log("MongoDB Connected");

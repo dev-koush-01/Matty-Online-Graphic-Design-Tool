@@ -7,6 +7,7 @@ import createTokenAndSaveCookies from "../jwt/AuthToken.js";
 export const register = async (req, res) => {
   try {
     const { name, email, password } = req.body;
+    console.log("JWT Secret:", process.env.JWT_SECRET);
 
     // Check if photo is present
     if (!req.files || !req.files.photo) {

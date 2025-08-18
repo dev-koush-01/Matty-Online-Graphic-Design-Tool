@@ -7,7 +7,7 @@ import Choose_designHub from '../../assets/Choose_designHub.png'
 function front_page() {
   return (
     <>
-    <div>      <div className='text-center flex justify-center items-center '><h1 className='text-center text-4xl font-bold mt-5 shadow-lg rounded-md animate-bounce  '>Welcome to DesignHub </h1>
+    <div>      <div className='text-center flex justify-center items-center '><h1 className='text-center text-4xl font-bold mt-5 shadow-lg rounded-md animate-bounce  '>Welcome to Matty </h1>
              
           </div>
 
@@ -32,7 +32,7 @@ function front_page() {
  
         <div className='flex'>
           <div className='pl-10 pt-25 space-y-5 pb-40'>
-          <h1 className='text-4xl font-bold ' >Why Choose DesignHub?</h1>
+          <h1 className='text-4xl font-bold ' >Why Choose Matty?</h1>
       <li>Make creating designs online and offline an effortless experience</li>
       <li>Utilize the logo generator to create logo design online for free</li>
       <li>Simplified, intuitive workflow that saves time and reduces costsEnsure < br/> brand consistency with our professional-grade output</li>

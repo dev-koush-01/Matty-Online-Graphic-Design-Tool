@@ -10,7 +10,6 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import passport from "passport";
 import "./config/passport.js"; 
-import feedbackRoutes from "./routes/feedbackRoutes.js";
 
 import contactRoutes from "./routes/contactRoutes.js";
 import profileRoutes from "./routes/user.route.js";
@@ -34,7 +33,7 @@ app.use(
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
-app.use("/api/feedback", feedbackRoutes);
+
 app.use("/api/chat", chatRoutes);
 
 app.use(

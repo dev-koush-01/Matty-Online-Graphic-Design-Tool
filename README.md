@@ -1,8 +1,27 @@
 # Matty – Online Graphic Design Tool 🎨
 
+**📖 Full Project Documentation (Google Doc):** [https://docs.google.com/document/d/1CPwvd5dGJqjckHdURU9teGHVhOmU9ggt/edit?usp=sharing\&ouid=116215077271812936986\&rtpof=true\&sd=true](https://docs.google.com/document/d/1CPwvd5dGJqjckHdURU9teGHVhOmU9ggt/edit?usp=sharing&ouid=116215077271812936986&rtpof=true&sd=true)
+
 Matty is a **full-stack web application** built on the **MERN stack (MongoDB, Express.js, React.js, Node.js)** that allows users to create posters, banners, social media graphics, and other visual content directly from their browser.
 
 Unlike traditional design software, Matty is lightweight, user-friendly, and accessible to students, designers, businesses, and social media managers.
+
+---
+
+## 📖 Project Documentation
+
+* **View the full documentation (Google Doc):** [https://docs.google.com/document/d/1CPwvd5dGJqjckHdURU9teGHVhOmU9ggt/edit?usp=sharing\&ouid=116215077271812936986\&rtpof=true\&sd=true](https://docs.google.com/document/d/1CPwvd5dGJqjckHdURU9teGHVhOmU9ggt/edit?usp=sharing&ouid=116215077271812936986&rtpof=true&sd=true)
+
+Matty is designed to bridge the gap between complex professional design tools and lightweight, web-based editors. The platform enables **real-time graphic design** with essential features, making it suitable for beginners and professionals alike.
+
+**Highlights:**
+
+* Focuses on **accessibility** by removing the need for heavy desktop installations.
+* Provides **drag-and-drop editing**, text customization, and image uploads.
+* Ensures **secure user authentication** and design storage in the cloud.
+* Supports **exporting designs** in high-quality formats (PNG/PDF).
+* Built for **students, educators, startups, and digital marketers** to create graphics effortlessly.
+* Future plans include **real-time collaboration, AI-assisted design, and mobile support**.
 
 ---
 
@@ -168,5 +187,3 @@ Unlike traditional design software, Matty is lightweight, user-friendly, and acc
 ---
 
 ✨ *Matty – A lightweight, scalable, and user-friendly graphic design tool for modern creators.*
-
----
